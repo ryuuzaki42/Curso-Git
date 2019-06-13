@@ -8,6 +8,10 @@ int subtracao(int a, int b){
    return (a-b);
 }
 
+int multiplicacao(int a, int b){
+   return (a*b);
+}
+
 int main(){
    int a, b;
    printf("Digite o valor de a: ");
@@ -16,8 +20,9 @@ int main(){
    printf("Digite o valor de b: ");
    scanf("%d", &b);
 
-   printf("Soma: %d", soma(a, b));
-   printf("Soma: %d", subtracao(a, b));
+   printf("\nSoma: %d", soma(a, b));
+   printf("\nSubtracao: %d", subtracao(a, b));
+   printf("\nMultiplicacao: %d", multiplicacao(a, b));
 
    return 0;
 }
