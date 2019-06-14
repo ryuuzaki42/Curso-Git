@@ -13,7 +13,11 @@ int multiplicacao(int a, int b){
 }
 
 int divisao(int a, int b){
-   return (a/b);
+	if (b == 0) {
+		printf("\nDivisao por z nao eh permitida!");
+		return 0;
+	} else
+   		return (a/b);
 }
 
 int main(){
